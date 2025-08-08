@@ -8,4 +8,6 @@ jobs:
         steps:
             - name: my first step
               run: echo "sancode" 
+            - name: my second step
+              run: ll
 
