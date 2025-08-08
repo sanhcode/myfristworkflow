@@ -6,8 +6,10 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout stage
+              uses: actions/checkout@v4
             - name: my first step
               run: echo "sancode" 
             - name: my second step
-              run: ls
+              run: cat README.md
 
