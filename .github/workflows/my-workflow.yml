@@ -13,4 +13,6 @@ jobs:
               run: |
                 echo "sancode" 
                 cat README.md
+            - name: stage completed
+              run: echo "comppleted"
 
