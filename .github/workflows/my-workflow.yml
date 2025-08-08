@@ -8,8 +8,9 @@ jobs:
         steps:
             - name: checkout stage
               uses: actions/checkout@v4
+
             - name: my first step
-              run: echo "sancode" 
-            - name: my second step
-              run: cat README.md
+              run: |
+                echo "sancode" 
+                cat README.md
 
