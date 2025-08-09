@@ -10,7 +10,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: my first step
-              run: echo "${{ secrets.my_name }}"
+              run: echo "${{ vars.my_name }}"
 
     second-job:
         needs: first-job
