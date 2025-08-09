@@ -2,6 +2,10 @@ name: my first work flow
 
 on: push
 
+env:
+  my_name: kumar
+  my_sur: herak
+
 jobs:
     first-job:
         runs-on: ubuntu-latest
@@ -10,9 +14,13 @@ jobs:
               uses: actions/checkout@v4
 
             - name: my first step
-              run: |
-                echo "sancode" 
-                cat README.md
-            - name: stage completed
-              run: echo "comppleted"
+              run: echo "$my_name"
 
+    second-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout stage
+              uses: actions/checkout@v4
+
+            - name: my first step
+              run: echo "$my_sur"
