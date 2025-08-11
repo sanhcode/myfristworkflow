@@ -2,9 +2,9 @@ name: my first work flow
 
 on: workflow_dispatch
 
-concurrency:
-  group: deploy-production
-  cancel-in-progress: true  # Wait instead of canceling previous run
+# concurrency:
+#   group: deploy-production
+#   cancel-in-progress: true  # Wait instead of canceling previous run
 
 jobs:
     first-job:
