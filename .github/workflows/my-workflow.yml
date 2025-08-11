@@ -1,6 +1,7 @@
 name: my first work flow
 
-on: push
+on: workflow_dispatch
+
 concurrency:
   group: deploy-production
   cancel-in-progress: true  # Wait instead of canceling previous run
