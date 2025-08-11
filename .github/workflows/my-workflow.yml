@@ -25,5 +25,5 @@ jobs:
 
             - name: my first step
               run: |
-              echo "${{ secrets.MY_SUR }}"
-              sleep 600s
+                echo "${{ secrets.MY_SUR }}"
+                sleep 600s
