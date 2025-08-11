@@ -1,6 +1,9 @@
 name: my first work flow
 
 on: push
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true  # Wait instead of canceling previous run
 
 jobs:
     first-job:
@@ -20,4 +23,6 @@ jobs:
               uses: actions/checkout@v4
 
             - name: my first step
-              run: echo "${{ secrets.MY_SUR }}"
+              run: |
+              echo "${{ secrets.MY_SUR }}"
+              sleep 600s
