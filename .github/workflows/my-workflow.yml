@@ -1,6 +1,7 @@
 name: my first work flow
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
 
 # concurrency:
 #   group: deploy-production
